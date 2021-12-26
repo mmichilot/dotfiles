@@ -15,6 +15,8 @@ RISCV_BIN=$TOOLCHAIN_DIR/$RISCV_TOOLCHAIN/bin
 # Python PIP scripts
 PIP_BIN=$HOME/.local/bin
 
-
 # Update PATH
 export PATH=$PIP_BIN:$FPGA_BIN:$RISCV_BIN:$MATLAB_BIN:$PATH
+
+# Aliases
+alias vim="nvim"

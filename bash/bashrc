@@ -6,6 +6,13 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+
+# Bash prompt customization
+GREEN="\[$(tput setaf 2)\]"
+BLUE="\[$(tput setaf 4)\]"
+BOLD="\[$(tput bold)\]"
+RESET="\[$(tput sgr0)\]"
+
+PS1="[${GREEN}\u@\h${RESET}] ${BOLD}${BLUE}\w${RESET} \$ "
 
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
