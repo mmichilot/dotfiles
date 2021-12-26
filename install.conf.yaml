@@ -1,10 +1,22 @@
 - clean: ['~']
 
 - link:
+    # Bash
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
     ~/.bash_logout: bash/bash_logout
     ~/.bash_aliases: bash/bash_aliases
+    
+    # Git
     ~/.gitconfig: git/gitconfig
+    
+    # Neovim
+    ~/.config/nvim/init.vim:
+        create: true
+        path: nvim/init.vim
 
-
+    # Alacritty
+    ~/.config/alacritty/alacritty.yml:
+        create: true
+        path: alacritty/alacritty.yml
+    ~/.config/alacritty/colors.yml: alacritty/colors.yml
