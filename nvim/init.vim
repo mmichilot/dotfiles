@@ -9,9 +9,11 @@ endif
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins
-Plug 'neovim/nvim-lspconfig' " LSP configuration
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'scrooloose/nerdtree' " NERD tree
+Plug 'neovim/nvim-lspconfig' " nvim-lspconfig
+Plug 'sonph/onehalf', { 'rtp': 'vim' } " onehalf theme
+Plug 'scrooloose/nerdtree' " Thew NERD tree
+Plug 'tpope/vim-fugitive' " fugitive.vim
+Plug 'airblade/vim-gitgutter' " vim-gitgutter
 
 " List ends here. Plugins become visible to Vim/Neovim after this call
 call plug#end()
